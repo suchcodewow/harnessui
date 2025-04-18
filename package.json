@@ -13,6 +13,7 @@
     "@conform-to/react": "^1.2.2",
     "@conform-to/zod": "^1.2.2",
     "@heroui/react": "^2.6.12",
+    "@iconify/react": "^5.2.1",
     "@prisma/adapter-pg": "^6.1.0",
     "@prisma/client": "^6.1.0",
     "@tabler/icons-react": "^3.28.1",

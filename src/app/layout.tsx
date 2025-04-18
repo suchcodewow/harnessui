@@ -1,4 +1,5 @@
-import AppHeader from "@/components/app-header/index";
+import AppHeader from "@/components/app-header";
+import AppSidebar from "@/components/app-sidebar";
 import Providers from "@/components/providers";
 import type { Metadata } from "next";
 import { Suspense } from "react";
@@ -17,10 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className="min-h-screen w-screen overflow-auto bg-[url(/light-bg.svg)] bg-cover dark:bg-[url(/dark-bg.svg)]">
+      <body className="flex min-h-screen w-screen items-start justify-center overflow-auto bg-[url(/light-bg.svg)] bg-cover dark:bg-[url(/dark-bg.svg)]">
         <Providers>
           <Toaster closeButton position="top-center" />
           <AppHeader />
+          <AppSidebar />
           <main className="flex-grow">
             <Suspense>{children}</Suspense>
           </main>
