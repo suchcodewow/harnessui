@@ -8,7 +8,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ui",
-  description: "SuchCodeWow UI",
+  description: "HarnessEvents",
 };
 
 export default function RootLayout({
